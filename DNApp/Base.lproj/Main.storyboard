@@ -156,10 +156,10 @@
             </objects>
             <point key="canvasLocation" x="1110" y="353.87323943661971"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="ZJa-LV-oMv">
             <objects>
-                <viewController id="wnQ-dw-N9k" sceneMemberID="viewController">
+                <viewController id="wnQ-dw-N9k" customClass="LoginViewController" customModule="DNApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SiH-ud-L34"/>
                         <viewControllerLayoutGuide type="bottom" id="fHn-3q-TcI"/>
@@ -247,6 +247,9 @@
                                                 <real key="value" value="3"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginButtonDidTouch:" destination="wnQ-dw-N9k" eventType="touchUpInside" id="FLW-8f-psI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -295,6 +298,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="dialogView" destination="hVY-UN-Y3Q" id="UMV-ic-hb3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qO0-k5-Qgi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -15,6 +15,7 @@
 		A78105531C5ED3BC0007167F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A78105511C5ED3BC0007167F /* LaunchScreen.storyboard */; };
 		A781055E1C5ED3BC0007167F /* DNAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A781055D1C5ED3BC0007167F /* DNAppTests.swift */; };
 		A78105691C5ED3BC0007167F /* DNAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78105681C5ED3BC0007167F /* DNAppUITests.swift */; };
+		A78885BD1C610A10002BF5DC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78885BC1C610A10002BF5DC /* LoginViewController.swift */; };
 		A7D295841C5EDE5100737AD9 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D295661C5EDE5100737AD9 /* AsyncButton.swift */; };
 		A7D295851C5EDE5100737AD9 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D295671C5EDE5100737AD9 /* AsyncImageView.swift */; };
 		A7D295861C5EDE5100737AD9 /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D295681C5EDE5100737AD9 /* AutoTextView.swift */; };
@@ -78,6 +79,7 @@
 		A78105641C5ED3BC0007167F /* DNAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A78105681C5ED3BC0007167F /* DNAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNAppUITests.swift; sourceTree = "<group>"; };
 		A781056A1C5ED3BC0007167F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A78885BC1C610A10002BF5DC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A7D295661C5EDE5100737AD9 /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
 		A7D295671C5EDE5100737AD9 /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		A7D295681C5EDE5100737AD9 /* AutoTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoTextView.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				A7D295651C5EDE5100737AD9 /* Spring */,
 				A78105451C5ED3BC0007167F /* AppDelegate.swift */,
 				A78105471C5ED3BC0007167F /* ViewController.swift */,
+				A78885BC1C610A10002BF5DC /* LoginViewController.swift */,
 				A78105491C5ED3BC0007167F /* Main.storyboard */,
 				A781054F1C5ED3BC0007167F /* Assets.xcassets */,
 				A78105511C5ED3BC0007167F /* LaunchScreen.storyboard */,
@@ -372,6 +375,7 @@
 				A78105481C5ED3BC0007167F /* ViewController.swift in Sources */,
 				A7D295951C5EDE5100737AD9 /* SoundPlayer.swift in Sources */,
 				A7D2958E1C5EDE5100737AD9 /* DesignableView.swift in Sources */,
+				A78885BD1C610A10002BF5DC /* LoginViewController.swift in Sources */,
 				A7D2958B1C5EDE5100737AD9 /* DesignableTabBarController.swift in Sources */,
 				A7D295881C5EDE5100737AD9 /* DesignableButton.swift in Sources */,
 				A781054E1C5ED3BC0007167F /* DNApp.xcdatamodeld in Sources */,
