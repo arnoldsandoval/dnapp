@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7461F4B1C69AD5200F36866 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7461F4A1C69AD5200F36866 /* LearnViewController.swift */; };
 		A78105461C5ED3BC0007167F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78105451C5ED3BC0007167F /* AppDelegate.swift */; };
 		A78105481C5ED3BC0007167F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78105471C5ED3BC0007167F /* ViewController.swift */; };
 		A781054B1C5ED3BC0007167F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A78105491C5ED3BC0007167F /* Main.storyboard */; };
@@ -65,6 +66,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A7461F4A1C69AD5200F36866 /* LearnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		A78105421C5ED3BC0007167F /* DNApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A78105451C5ED3BC0007167F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A78105471C5ED3BC0007167F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				A78105451C5ED3BC0007167F /* AppDelegate.swift */,
 				A78105471C5ED3BC0007167F /* ViewController.swift */,
 				A78885BC1C610A10002BF5DC /* LoginViewController.swift */,
+				A7461F4A1C69AD5200F36866 /* LearnViewController.swift */,
 				A78105491C5ED3BC0007167F /* Main.storyboard */,
 				A781054F1C5ED3BC0007167F /* Assets.xcassets */,
 				A78105511C5ED3BC0007167F /* LaunchScreen.storyboard */,
@@ -367,6 +370,7 @@
 				A7D295861C5EDE5100737AD9 /* AutoTextView.swift in Sources */,
 				A7D2958F1C5EDE5100737AD9 /* ImageLoader.swift in Sources */,
 				A7D295941C5EDE5100737AD9 /* Misc.swift in Sources */,
+				A7461F4B1C69AD5200F36866 /* LearnViewController.swift in Sources */,
 				A7D295871C5EDE5100737AD9 /* BlurView.swift in Sources */,
 				A7D295A01C5EDE5100737AD9 /* UnwindSegue.swift in Sources */,
 				A7D295921C5EDE5100737AD9 /* LoadingView.swift in Sources */,

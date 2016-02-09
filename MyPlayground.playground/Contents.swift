@@ -113,3 +113,41 @@ if let sureAnswer = answer { //Check to see that sure answer has a value
 }
 
 UILabel().text = answer ?? ""
+
+
+
+
+//
+//  playground.swift
+//
+//
+//  Created by Arnold Sandoval on 2/4/16.
+//
+//
+
+var names = [String]()
+
+do {
+    let json = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
+    
+    if let blogs = json["blogs"] as? [[String: AnyObject]] {
+        for blog in blogs {
+            if let name = blog["name"] as? String {
+                names.append(name)
+            }
+        }
+    }
+} catch {
+    print("error serializing JSON: \(error)")
+}
+
+print(names) // ["Bloxus test", "Manila Test"]
+
+struct RapperStruct {
+    var name: String
+    var sounds: Array
+    var picture: String
+    
+    init(name: String, sounds: Array, picture: String, is_favorite: Bool)
+}
+
