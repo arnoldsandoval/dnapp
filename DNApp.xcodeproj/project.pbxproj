@@ -19,6 +19,7 @@
 		A78885BD1C610A10002BF5DC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78885BC1C610A10002BF5DC /* LoginViewController.swift */; };
 		A7CAED711C6E7BC500DAAFC0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CAED701C6E7BC500DAAFC0 /* MenuViewController.swift */; };
 		A7CAED731C6E7CA800DAAFC0 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CAED721C6E7CA800DAAFC0 /* WebViewController.swift */; };
+		A7CAED751C6E8F0700DAAFC0 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CAED741C6E8F0700DAAFC0 /* StoryTableViewCell.swift */; };
 		A7D295841C5EDE5100737AD9 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D295661C5EDE5100737AD9 /* AsyncButton.swift */; };
 		A7D295851C5EDE5100737AD9 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D295671C5EDE5100737AD9 /* AsyncImageView.swift */; };
 		A7D295861C5EDE5100737AD9 /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D295681C5EDE5100737AD9 /* AutoTextView.swift */; };
@@ -86,6 +87,7 @@
 		A78885BC1C610A10002BF5DC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A7CAED701C6E7BC500DAAFC0 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		A7CAED721C6E7CA800DAAFC0 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		A7CAED741C6E8F0700DAAFC0 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
 		A7D295661C5EDE5100737AD9 /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
 		A7D295671C5EDE5100737AD9 /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		A7D295681C5EDE5100737AD9 /* AutoTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoTextView.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				A7D295651C5EDE5100737AD9 /* Spring */,
 				A78105451C5ED3BC0007167F /* AppDelegate.swift */,
 				A740BD821C6E6386004898D2 /* StoriesTableViewController.swift */,
+				A7CAED741C6E8F0700DAAFC0 /* StoryTableViewCell.swift */,
 				A78885BC1C610A10002BF5DC /* LoginViewController.swift */,
 				A7461F4A1C69AD5200F36866 /* LearnViewController.swift */,
 				A7CAED701C6E7BC500DAAFC0 /* MenuViewController.swift */,
@@ -405,6 +408,7 @@
 				A7D295971C5EDE5100737AD9 /* SpringAnimation.swift in Sources */,
 				A7D295891C5EDE5100737AD9 /* DesignableImageView.swift in Sources */,
 				A78105461C5ED3BC0007167F /* AppDelegate.swift in Sources */,
+				A7CAED751C6E8F0700DAAFC0 /* StoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

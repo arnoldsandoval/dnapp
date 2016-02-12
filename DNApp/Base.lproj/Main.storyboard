@@ -173,16 +173,18 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8pB-aY-TZV">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCN-Rw-XlV">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                            <connections>
+                                                <action selector="closeButtonDidTouch:" destination="wnQ-dw-N9k" eventType="touchUpInside" id="DSV-Iz-pMO"/>
+                                                <action selector="loginButtonDidTouch:" destination="wnQ-dw-N9k" eventType="touchUpInside" id="cjN-Oy-gIc"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
                                 </view>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCN-Rw-XlV">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <connections>
-                                    <action selector="closeButtonDidTouch:" destination="wnQ-dw-N9k" eventType="touchUpInside" id="DSV-Iz-pMO"/>
-                                    <action selector="loginButtonDidTouch:" destination="wnQ-dw-N9k" eventType="touchUpInside" id="cjN-Oy-gIc"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVY-UN-Y3Q" customClass="DesignableView" customModule="DNApp" customModuleProvider="target">
                                 <rect key="frame" x="16" y="144" width="288" height="280"/>
                                 <subviews>
@@ -296,18 +298,14 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fHn-3q-TcI" firstAttribute="top" secondItem="lCN-Rw-XlV" secondAttribute="bottom" id="1Sy-5V-EQR"/>
                             <constraint firstItem="hVY-UN-Y3Q" firstAttribute="centerX" secondItem="pl7-Zj-4yx" secondAttribute="centerX" id="3Sw-H1-Y6U"/>
                             <constraint firstItem="1hP-T5-c3o" firstAttribute="top" secondItem="pl7-Zj-4yx" secondAttribute="top" id="7Oo-hv-g0z"/>
                             <constraint firstItem="fHn-3q-TcI" firstAttribute="top" secondItem="1hP-T5-c3o" secondAttribute="bottom" id="7QG-3K-CNm"/>
-                            <constraint firstItem="lCN-Rw-XlV" firstAttribute="leading" secondItem="pl7-Zj-4yx" secondAttribute="leading" id="BNw-w3-SeW"/>
-                            <constraint firstItem="lCN-Rw-XlV" firstAttribute="top" secondItem="pl7-Zj-4yx" secondAttribute="top" id="NKd-NI-h5A"/>
                             <constraint firstItem="hVY-UN-Y3Q" firstAttribute="centerX" secondItem="pl7-Zj-4yx" secondAttribute="centerX" id="Pvc-Ov-seG"/>
                             <constraint firstItem="1hP-T5-c3o" firstAttribute="leading" secondItem="pl7-Zj-4yx" secondAttribute="leading" id="Qzn-32-1bh"/>
                             <constraint firstItem="hVY-UN-Y3Q" firstAttribute="centerY" secondItem="pl7-Zj-4yx" secondAttribute="centerY" id="VMr-sL-f1V"/>
                             <constraint firstItem="hVY-UN-Y3Q" firstAttribute="leading" secondItem="pl7-Zj-4yx" secondAttribute="leadingMargin" id="VNG-dl-GIz"/>
                             <constraint firstItem="hVY-UN-Y3Q" firstAttribute="centerY" secondItem="pl7-Zj-4yx" secondAttribute="centerY" id="WBO-YP-dlE"/>
-                            <constraint firstAttribute="trailing" secondItem="lCN-Rw-XlV" secondAttribute="trailing" id="cvV-Cv-Jne"/>
                             <constraint firstItem="hVY-UN-Y3Q" firstAttribute="trailing" secondItem="pl7-Zj-4yx" secondAttribute="trailingMargin" id="dRo-rg-cnS"/>
                             <constraint firstAttribute="trailing" secondItem="1hP-T5-c3o" secondAttribute="trailing" id="gmB-1W-Vn2"/>
                             <constraint firstItem="hVY-UN-Y3Q" firstAttribute="top" secondItem="SiH-ud-L34" secondAttribute="bottom" constant="124" id="xNC-ch-NSA"/>
@@ -332,7 +330,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoryCell" rowHeight="100" id="aFF-5N-3He">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoryCell" rowHeight="100" id="aFF-5N-3He" customClass="StoryTableViewCell" customModule="DNApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aFF-5N-3He" id="py5-bf-Bar">
@@ -377,6 +375,9 @@
                                             <state key="normal" title="813" image="icon-upvote">
                                                 <color key="titleColor" red="0.58615922927856445" green="0.6500999927520752" blue="0.71262353658676147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
+                                            <connections>
+                                                <action selector="upvoteButtonDidTouch:" destination="aFF-5N-3He" eventType="touchUpInside" id="x4X-fY-KCU"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcW-Bc-4XI" customClass="SpringButton" customModule="DNApp" customModuleProvider="target">
                                             <rect key="frame" x="95" y="54" width="70" height="33"/>
@@ -390,6 +391,9 @@
                                             <state key="normal" title="510" image="icon-comment">
                                                 <color key="titleColor" red="0.58615922927856445" green="0.6500999927520752" blue="0.71262353658676147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
+                                            <connections>
+                                                <action selector="commentButtonDidTouch:" destination="aFF-5N-3He" eventType="touchUpInside" id="N5M-Q5-GsH"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8YB-Jg-eOm">
                                             <rect key="frame" x="51" y="36" width="260" height="18"/>
@@ -419,6 +423,15 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <inset key="separatorInset" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="authorLabel" destination="8YB-Jg-eOm" id="d9X-w7-DLw"/>
+                                    <outlet property="avatarImageView" destination="D3O-aW-hX0" id="kw9-Mx-zMm"/>
+                                    <outlet property="badgeImageView" destination="Txb-Kf-EH9" id="icC-1d-xdj"/>
+                                    <outlet property="commentButton" destination="KcW-Bc-4XI" id="46K-dF-2pN"/>
+                                    <outlet property="timeLabel" destination="OnM-tF-hxl" id="zlL-Ae-VX2"/>
+                                    <outlet property="titleLabel" destination="e2r-KK-XnD" id="kiu-WY-SIP"/>
+                                    <outlet property="upvoteButton" destination="aHG-UE-K7l" id="Usq-aa-rKP"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -728,6 +741,6 @@
         <image name="input-outline" width="7" height="44"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zcW-Mb-k4S"/>
+        <segue reference="7D8-4v-NFY"/>
     </inferredMetricsTieBreakers>
 </document>
