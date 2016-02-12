@@ -8,6 +8,13 @@
 
 import UIKit
 
+protocol StoryTableViewCellDelegate: class {
+    
+    func storyTableViewCellDidTouchUpvote(cell: StoryTableViewCell, sender: AnyObject)
+    func storyTableViewCellDidTouchComment(cell: StoryTableViewCell, sender: AnyObject)
+    
+}
+
 class StoryTableViewCell: UITableViewCell {
     
     
@@ -19,16 +26,23 @@ class StoryTableViewCell: UITableViewCell {
     @IBOutlet weak var authorLabel: UILabel!
     @IBOutlet weak var avatarImageView: UIImageView!
     
+    weak var delegate: StoryTableViewCellDelegate?
+    
     @IBAction func upvoteButtonDidTouch(sender: AnyObject) {
         upvoteButton.animation = "pop"
         upvoteButton.force = 3
         upvoteButton.animate()
+        
+        delegate?.storyTableViewCellDidTouchUpvote(self, sender: sender)
+        
     }
     
     @IBAction func commentButtonDidTouch(sender: AnyObject) {
         commentButton.animation = "pop"
         commentButton.force = 3
         commentButton.animate()
+        
+        delegate?.storyTableViewCellDidTouchComment(self, sender: sender)
     }
     
 }
