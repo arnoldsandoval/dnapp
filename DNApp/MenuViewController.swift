@@ -1,21 +1,16 @@
 //
-//  LoginViewController.swift
+//  MenuViewController.swift
 //  DNApp
 //
-//  Created by Arnold Sandoval on 2/2/16.
+//  Created by Arnold Sandoval on 2/12/16.
 //  Copyright © 2016 Arnold Sandoval. All rights reserved.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class MenuViewController: UIViewController {
 
     @IBOutlet weak var dialogView: DesignableView!
-    
-    @IBAction func loginButtonDidTouch(sender: AnyObject) {
-        dialogView.animation = "shake"
-        dialogView.animate()
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +25,11 @@ class LoginViewController: UIViewController {
     
     @IBAction func closeButtonDidTouch(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
+        dialogView.animation = "fall"
+        dialogView.animate()
     }
-
+    
+    
     /*
     // MARK: - Navigation
 
